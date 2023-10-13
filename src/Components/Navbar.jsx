@@ -1,0 +1,36 @@
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import '../Components/NavbarComponent.css'
+
+function NavbarComponent() {
+  return (
+    <Navbar bg="dark" data-bs-theme="dark">
+      <Container>
+        <Navbar.Brand href="#home"><img src="kicksss.gif" alt="Logo" className="logo-image" />KICKS.ng</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Kicks" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Male Sneakers</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Female Sneakers
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Unisex Sneakers</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Sneakers Acessories
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default NavbarComponent;
