@@ -5,4 +5,4 @@ const ImageComponent = ()=> {
         <img src='../Product1.webp'  alt="Product" />
     );
 };
-export default ImageComponent;
+export default ImageComponent; // Exporting the ImageComponent

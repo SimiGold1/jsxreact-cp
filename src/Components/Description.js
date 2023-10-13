@@ -6,4 +6,4 @@ const DescriptionComponent=() => {
     );
 };
 
-export default DescriptionComponent;
+export default DescriptionComponent; // Exporting the DescriptionComponent

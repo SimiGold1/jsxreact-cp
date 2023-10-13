@@ -4,17 +4,18 @@ const firstName = ""; // Replace with your first name or set it to null/undefine
 
 const GreetingComponent = () => {
   return (
-      <div>
-        {firstName ? (
-          <>
+    <div>
+      {/* Conditional rendering based on the presence of firstName */}
+      {firstName ? (
+        <>
           <p>Hello, {firstName}!</p>
           <img src="../Fendi.jpeg" alt="Profile" />
-          </>
-        ) : (
-          <p>Hello, there!</p>
-        )}
-      </div>
+        </>
+      ) : (
+        <p>Hello, there!</p>
+      )}
+    </div>
   );
 };
 
-export default GreetingComponent;
+export default GreetingComponent; // Exporting the GreetingComponent

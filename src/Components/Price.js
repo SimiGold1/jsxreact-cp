@@ -6,4 +6,4 @@ const PriceComponent =() =>{
     )
 }
 
-export default PriceComponent;
+export default PriceComponent; // Exporting the PriceComponent

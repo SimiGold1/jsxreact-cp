@@ -5,4 +5,4 @@ const NameComponent = () => {
   };
 
 
-  export default NameComponent;
+  export default NameComponent; // Exporting the NameComponent
